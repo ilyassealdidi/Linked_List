@@ -26,5 +26,6 @@ int	lst_size(t_list *lst)
 		length++;
 		if (lst->next == head)
 			return (length);
+		lst = lst->next;
 	}
 }
