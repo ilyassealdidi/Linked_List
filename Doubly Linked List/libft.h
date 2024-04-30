@@ -28,7 +28,7 @@ int		lst_size(t_list *lst);
 void	lst_addback(t_list **lst, t_list *new);
 void	lst_addfront(t_list **lst, t_list *new);
 void	lst_delone(t_list *lst, void (*del)(void *));
-void	lst_clear(t_list *lst);
+void	lst_clear(t_list **lst, void (*del)(void *));
 void	lst_iter(t_list *lst, void (*f)(void *));
 
 #endif
